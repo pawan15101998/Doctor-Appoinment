@@ -28,8 +28,10 @@ app.use('/api/v1/doctor', require('./routes/doctorRoutes'))
 // app.use('/myapp', myRouter);
 
 // static file
-app.use(express.static(path.join(__dirname, './client/build')))
-app.get('*', )
+// app.use(express.static(path.join(___dirname, './client/build')))
+// app.get('*', function(req, res){
+//     res.sendFile(path.join(__dirname, './client/build/index.html'))
+// })
 
 app.listen(port, ()=> {
     console.log(`Server is running on the ${port}`.bgCyan.white);
